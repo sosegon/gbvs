@@ -1,4 +1,4 @@
-from gbvs import gaborKernelCalculator
+import gaborKernelCalculator
 import cv2
 import numpy as np
 

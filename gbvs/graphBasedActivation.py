@@ -1,7 +1,7 @@
 import numpy as np
 import scipy.io
 import sklearn.preprocessing
-from gbvs import markovChain
+import markovChain
 
 import os
 
