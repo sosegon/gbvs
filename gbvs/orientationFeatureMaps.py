@@ -1,4 +1,4 @@
-from gaborKernelCalculator import getGaborKernels
+from gbvs import gaborKernelCalculator
 import cv2
 import numpy as np
 
@@ -6,7 +6,7 @@ def compute(L, gaborparams, thetas):
     # L = Intensity Map
     # L = np.maximum(np.maximum(r, g), b)
 
-    kernels = getGaborKernels(gaborparams, thetas)
+    kernels = gaborKernelCalculator.getGaborKernels(gaborparams, thetas)
     featMaps = []
     for th in thetas:
         kernel_0  = kernels[th]['0']

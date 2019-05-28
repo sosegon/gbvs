@@ -1,10 +1,15 @@
 import numpy as np
 import scipy.io
 import sklearn.preprocessing
-import markovChain
+from gbvs import markovChain
+
+import os
+
+this_dir, this_filename = os.path.split(__file__)
+DATA_PATH = os.path.join(this_dir, "../28__32__m__2.mat")
 
 def loadGraphDistanceMatrixFor28x32():
-    f = scipy.io.loadmat("./28__32__m__2.mat")
+    f = scipy.io.loadmat(DATA_PATH)
     distanceMat = np.array(f['grframe'])[0][0][0]
     lx = np.array(f['grframe'])[0][0][1]
     dim = np.array(f['grframe'])[0][0][2]

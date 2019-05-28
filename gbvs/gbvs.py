@@ -1,8 +1,8 @@
 import time
 import cv2
-import colorFeatureMaps
-import orientationFeatureMaps
-import graphBasedActivation
+from gbvs import colorFeatureMaps
+from gbvs import orientationFeatureMaps
+from gbvs import graphBasedActivation
 import numpy as np
 from matplotlib import pyplot as plt
 
